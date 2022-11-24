@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+@keyframes color {
+  0%   { background: #33CCCC; }
+  20%  { background: #33CC36; }
+  40%  { background: #B8CC33; }
+  60%  { background: #FCCA00; }
+  80%  { background: #33CC36; }
+  100% { background: #33CCCC; }
+}
+.App {
+  align-items: center;
+  justify-content: center;
+  
+}
+body {
+
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+        -45deg, 
+        rgb(109, 227, 59) 10%, 
+        rgb(229, 117, 57) 25%, 
+        rgba(152,68,183,1) 51%, 
+        rgb(2, 182, 253) 100%
+  );  
+  animation: AnimateBG 20s ease infinite;
+ 
+}
+@keyframes AnimateBG { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+.title h1 {
+  color: #3a3a3a;
+  text-align: center;
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: transparent;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 6px 5px 15px black;
+  border-style: solid;
+  border-color: black;
+}
+form h3 {
+  text-align: center;
+}
+form input {
+  width: 100%;
+  padding: 10px 5px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 15px;
+  
+}
+form input:hover {
+  transform: scale(1.1);
+}
+.input_container {
+  margin-bottom: 20px;
+}
+.btn_container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.btn_container button {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.todo_container {
+  width: 50%;
+  margin: 0 auto;
+}
+.todo {
+  margin-top: 20px;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 6px 120px black;
+  border-style: solid;
+  border-color: black;
+
+}
+.todo:hover{
+ background-color: beige;
+}
+.todo input {
+  cursor: pointer;
+  width: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.button-complete,
+.button-delete,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+}
+#i {
+  font-size: 35px;
+}
+.button-complete {
+  color: #95faa3;
+  margin-right: 10px;
+}
+.button-edit {
+  color: #56cfff;
+  margin-right: 10px;
+}
+.button-delete {
+  color: rgb(255, 122, 98);
+}
+@media screen and (max-width: 667px) {
+  .task_container {
+    width: 90%;
+  }
+  .task {
+    margin-right: 0px;
+  }
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+.title{
+  background-color: transparent;
+  margin-left: 1000px;
+  margin-right: 1000px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 6px 5px 15px black;
+}
+button:hover{
+  transform: scale(1.2);
+  background-color:#FFBF66;
+  color: black
+}
